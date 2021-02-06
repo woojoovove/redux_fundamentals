@@ -1,0 +1,15 @@
+1. write a reducer
+    - src/reducer.js
+    - reducer.js consists of initialState and reducer function.
+    - initialState may have several types of state. (eg. todos, filters)
+    - function reducer receives initialState and action.
+    - action may grouped by the state type it works around. (eg. todos/todoAdded, filters/statusFilterChanged)
+
+2. slice up a reducer by features into 'XXSlice.js'
+    - state type 'todos' and action 'todos/XXX' goes in to 'todosSlice.js'
+    - state type 'filters' and action 'filters/XXX' goes in to 'filtersSlice.js'
+
+3. combine sliceReducers into a rootReducer
+    - use 'combineReducers' utility from 'redux' library.
+    - rootReducer is in src/reducer.js
+
